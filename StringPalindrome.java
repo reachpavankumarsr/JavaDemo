@@ -3,9 +3,9 @@ import java.util.*;
 class StringPalindrome {
     public static void main(String[] args) {
         String original, reverse = ""; // Objects of String class
-        Scanner get = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
         System.out.println("Enter a string/number to check if it is a palindrome");
-        original = get.nextLine();
+        original = in.nextLine();
         int length = original.length();
         for (int i = length - 1; i >= 0; i--)
             reverse = reverse + original.charAt(i);
